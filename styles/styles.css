@@ -1,0 +1,92 @@
+/* color palette
+#7a0019 - UMN maroon
+#ffcc33 - UMN gold
+#0a100d - rich black
+#717c89 - dark/blue grey
+#c1c0b6 - light/green grey
+*/
+
+/* fonts
+font-family: 'Merriweather Sans', sans-serif; (Header)
+font-family: 'Montserrat', sans-serif; (body text)
+*/
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+/* header */
+
+.container {
+  width: 90%;
+  height: 70px;
+  padding-top: 0;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #7a0019;
+  color: #fff;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  max-height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 29px;
+
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+nav a:hover {
+  color: #c1c0b6;
+}
+
+nav li a::before {
+ content: '';
+ display: block;
+ height: 5px;
+ background-color: #ffcc33;
+
+ position: absolute;
+ top: 0;
+ width: 0;
+
+ transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
