@@ -91,3 +91,35 @@ nav li a::before {
 nav a:hover::before {
   width: 100%;
 }
+
+/* main content */
+
+#siteBody {
+    max-width: 90%;
+    margin: auto;
+}
+
+.contentContainer {
+  display: flex;
+
+}
+
+.sideContent {
+  max-width: 15%;
+  height: 100%;
+  margin: 0;
+  flex: 1;
+}
+
+.sideContentMain {
+  float: left;
+  height: auto;
+  width: 100%;
+  padding: 20px 20px 100px 20px;
+  background: #c1c0b6;
+}
+
+.mainContent {
+  padding: 20px 20px 100px 20px;
+  flex: 1;
+}
