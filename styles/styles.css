@@ -94,24 +94,39 @@ header nav a:hover::before {
 
 /* main content */
 
+#backdrop {
+  max-width: 100%;
+  margin; auto;
+}
+
 #siteBody {
     max-width: 90%;
-    margin: auto;
+    min-height: 500px;
+    height: auto;
+    margin: 0 auto 30px auto;
+}
+
+#siteBody h1 {
+  font-size: 300%;
 }
 
 .contentContainer {
   display: flex;
+}
+
+.tripleBox {
+  max-width: 90%;
+}
+
+.columnContent {
+  max-width: 29.3%;
+  float: left;
+  min-height: 400px;
+  margin: 25px 2%;
 
 }
 
-.sideContent {
-  max-width: 15%;
-  height: 100%;
-  margin: 0;
-  flex: 1;
-}
-
-.sideContentMain {
+/* .sideContentMain {
   float: left;
   height: auto;
   width: 100%;
@@ -122,6 +137,29 @@ header nav a:hover::before {
 .mainContent {
   padding: 20px 20px 100px 20px;
   flex: 1;
+} */
+
+.centerHeader {
+  text-align: center;
+}
+
+.paragraphText {
+  margin: 25px auto;
+}
+
+.backdropImage {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.thirds {
+  margin: 0 auto;
+}
+
+.thirdImage {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 /* footer */
@@ -135,7 +173,7 @@ header nav a:hover::before {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
